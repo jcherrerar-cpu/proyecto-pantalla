@@ -47,6 +47,14 @@ div{
         width: 45%;
         display: inline-block;
         vertical-align: top;
+        figure {
+    border-radius: 50%;
+            .grid figure:last-child {
+    grid-column: span 2;
+}
+
+}
+
     }
 
     .grid img {
@@ -58,6 +66,13 @@ div{
 @media (min-width: 998px) {
     .grid figure {
         width: 30%;
+        .grid figure:nth-child(3n) {
+    grid-column: span 2;
+}
+@media (prefers-reduced-motion: reduce)
+    }      
+@media (prefers-color-scheme: dark)
+
     }
 }
 
